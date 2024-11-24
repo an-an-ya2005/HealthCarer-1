@@ -1,0 +1,62 @@
+.not-found-container {
+  display: flex;
+  justify-content: center; /* Center align the items horizontally */
+  align-items: center; /* Center align items vertically */
+  height: 100vh;
+  background: linear-gradient(135deg, #7ab3d6, #fad0c4);
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+
+.text-container {
+  text-align: center; /* Ensure the text is centered */
+  margin-right: 20px; /* Add some spacing between the text and the image */
+}
+
+.doctor-image {
+  width: auto; /* Set a width for the image */
+  height: 350px; /* Maintain aspect ratio */
+  flex-shrink: 0; /* Prevent image from shrinking */
+  margin-left: 10px; /* Add margin to space out from the text */
+}
+
+.not-found-title {
+  font-size: 10rem;
+  color: #ff6f61;
+  margin: 0;
+  text-shadow: 4px 4px 20px rgba(0, 0, 0, 0.7);
+  animation: bounce 1s infinite alternate;
+}
+
+.not-found-message {
+  font-size: 1.4rem;
+  margin: 20px 0;
+  color: #ffffff;
+  text-shadow: 2px 2px 15px rgba(0, 0, 0, 0.5);
+}
+
+.home-link {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 15px 30px;
+  font-size: 1rem;
+  color: #ffffff;
+  background-color: #ff6f61;
+  border-radius: 30px;
+  text-decoration: none;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+  transition: all 0.3s ease;
+}
+
+.home-link:hover {
+  background-color: #ff9a9e;
+  color: #ffffff;
+  transform: scale(1.1);
+  box-shadow: 0 6px 25px rgba(0, 0, 0, 0.6);
+}
+
+@keyframes bounce {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-10px); }
+}
